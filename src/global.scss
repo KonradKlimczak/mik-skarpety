@@ -21,6 +21,9 @@ body {
   .burger-icon {
     padding: 0 12px;
   }
+  .mik-logo {
+    display: none;
+  }
   h1 {
     font-size: initial;
   }
@@ -46,8 +49,18 @@ body {
 @media (min-width: 1024px) {
   .mik-navbar {
     padding: 0 16rem;
+    height: 60px;
     .burger-icon {
       display: none;
+    }
+    .mik-logo {
+      display: block;
+      border: 1px solid #890100;
+      z-index: 1;
+      position: absolute;
+      top: 10px;
+      left: 144px;
+      width: 100px;
     }
     .mik-menu {
       display: flex;
