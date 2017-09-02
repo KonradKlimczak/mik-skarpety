@@ -1,4 +1,31 @@
 body {
   margin: 0;
-  background-color: red;
+  min-height: 100vh;
+}
+
+.mik {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mik-navbar {
+  height: 42px;
+  background-color: #bc3428;
+  align-items: center;
+  display: flex;
+  color: white;
+  padding: 0 16px;
+}
+h1 {
+  font-size: initial;
+  margin-left: 16px;
+}
+
+.mik-content {
+  flex: 1;
+}
+
+.mik-footer {
+  height: 20px;
 }
