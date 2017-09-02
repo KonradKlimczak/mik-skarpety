@@ -28,8 +28,28 @@ body {
     font-size: initial;
   }
 
+  .search-input {
+    min-height: 30px;
+    font-size: inherit;
+    background-color: #B5544B;
+    border: 0;
+    box-shadow: none;
+    color: #fff;
+    input::placeholder {
+      color: #fff;
+    }
+    input {
+      min-height: 30px;
+      border: none;
+      background: none;
+    }
+  }
+
   .mik-menu {
     display: none;
+    .mik-menu-item {
+      display: block;
+    }
   }
 
   &.is-active {
