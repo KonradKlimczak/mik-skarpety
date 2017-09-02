@@ -12,6 +12,9 @@ body {
 .mik-navbar {
   height: 42px;
   background-color: #bc3428;
+  border-bottom: 1px solid #890100;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   align-items: center;
   display: flex;
   color: white;
@@ -46,4 +49,6 @@ body {
 
 .mik-footer {
   height: 20px;
+  background-color: lightgrey;
+  border-top: 1px solid grey;
 }
