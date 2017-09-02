@@ -43,6 +43,18 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .mik-navbar {
+    padding: 0 16rem;
+    .burger-icon {
+      display: none;
+    }
+    .mik-menu {
+      display: flex;
+    }
+  }
+}
+
 .mik-content {
   flex: 1;
 }
