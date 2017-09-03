@@ -7,7 +7,9 @@
     "browser": true
   },
   "rules": {
-      "semi": 2,
-      "no-undef": "warn"
+    "semi": 2,
+    "no-undef": "warn",
+    "no-var": "warn",
+    "no-const-assign": "error"
   }
 }
