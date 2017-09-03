@@ -47,25 +47,8 @@ body {
       border: none;
       background: none;
     }
-    .suggestions {
-      background-color: #bc3428;
+    #product-suggestions {
       position: absolute;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-      top: 32px;
-      li {
-        cursor: pointer;
-        display: flex;
-        height: 18px;
-        padding: 8px 16px;
-        margin: 0 2px;
-        transition: .1s all;
-        border-radius: 2px;
-      }
-      li:hover {
-        background-color: #B5544B;
-      }
     }
   }
 

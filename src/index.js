@@ -44,14 +44,14 @@ function displayMatches() {
   const matchArray = findMatches(this.value, products);
   suggestions.innerHTML = matchArray
     .map(product => `
-      <li>
+      <option>
         <span class="name">${product.name}</span>
-      </li>
+      </option>
     `)
     .join('');
 }
 const searchInput = document.getElementById('search-offer');
-const suggestions = document.querySelector('.suggestions');
+const suggestions = document.getElementById('product-suggestions');
 
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
