@@ -1,6 +1,13 @@
 import * as Router from './Router';
+import initMenu from './Page/Menu';
+
 
 export default () => {
+  initRouter();
+  initMenu();
+};
+
+function initRouter() {
   // configuration
   Router.Router.config({ mode: 'history'});
 
@@ -19,6 +26,5 @@ export default () => {
 
   // forwarding
   Router.Router.navigate('/');
-
-};
+}
 
