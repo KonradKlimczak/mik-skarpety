@@ -1,24 +1,16 @@
 import '../node_modules/font-awesome/scss/font-awesome.scss';
 import './global.scss';
 
-const categories = ['Nowość', 'Best seller', 'Męskie', 'Damskie', 'Dziecięce']
-const products = [{
-  category: 'Męskie',
-  name: 'Skarpety garniturowe'
-}, {
-  category: 'Męskie',
-  name: 'Skarpety sportowe'
-}, {
-  category: 'Damskie',
-  name: 'Skarpety w kwiaty'
-}]
+import { categories } from './devData';
+import { initSearch } from './searchInput';
 
+initSearch();
 
 const navbar = document.querySelector('.mik-navbar');
 const burgerIcon = document.querySelector('.burger-icon');
 const mikMenu = document.querySelector('.mik-menu');
 
-burgerIcon.addEventListener('click', () => navbar.classList.toggle('is-active'))
+burgerIcon.addEventListener('click', () => navbar.classList.toggle('is-active'));
 
 mikMenu.innerHTML = categories
   .map(category => `
@@ -27,31 +19,3 @@ mikMenu.innerHTML = categories
   </li>
   `)
   .join('');
-
-function findMatches(wordToMatch, ciproductsties) {
-  return products.filter(product => {
-    // here we need to figure out if the city or state matches what was searched
-    const regex = new RegExp(wordToMatch, 'gi');
-    return product.category.match(regex) || product.name.match(regex)
-  });
-}
-
-function displayMatches() {
-  if (this.value === '') {
-    suggestions.innerHTML = '';
-    return;
-  }
-  const matchArray = findMatches(this.value, products);
-  suggestions.innerHTML = matchArray
-    .map(product => `
-      <option>
-        <span class="name">${product.name}</span>
-      </option>
-    `)
-    .join('');
-}
-const searchInput = document.getElementById('search-offer');
-const suggestions = document.getElementById('product-suggestions');
-
-searchInput.addEventListener('change', displayMatches);
-searchInput.addEventListener('keyup', displayMatches);
