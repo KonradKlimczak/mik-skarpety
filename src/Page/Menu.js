@@ -8,7 +8,7 @@ const mikMenu = document.querySelector('.mik-menu');
 
 burgerIcon.addEventListener('click', () => navbar.classList.toggle('is-active'));
 
-export default () => {
+export function render() {
   const menuItems = document.createDocumentFragment();
   categories.map(category => {
     const menuItem = document.createElement('li');

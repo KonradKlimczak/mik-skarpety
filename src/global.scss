@@ -1,7 +1,11 @@
+@import "colors";
+@import "Components/Button";
+
 body {
   margin: 0;
   min-height: 100vh;
   font-family: Roboto,Helvetica Neue,sans-serif;
+  background: rgb(227, 227, 227);
 }
 
 .mik {
@@ -27,7 +31,7 @@ body {
   }
   h1 {
     font-weight: initial;
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .search-input {
@@ -99,6 +103,9 @@ body {
       left: 144px;
       width: 100px;
     }
+    h1 {
+      font-size: 2rem;
+    }
     .mik-menu {
       display: flex;
     }
@@ -106,7 +113,10 @@ body {
 }
 
 .mik-content {
+  display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .mik-footer {

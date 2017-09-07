@@ -1,10 +1,11 @@
 import * as Router from './Router';
-import initMenu from './Page/Menu';
+import * as Menu from './Page/Menu';
+import * as Main from './Page/Main';
 
 
 export default () => {
   initRouter();
-  initMenu();
+  Menu.render();
 };
 
 function initRouter() {
@@ -17,7 +18,7 @@ function initRouter() {
   // adding routes
   Router.Router
     .add('new', function() {
-      console.log('new socks');
+      Main.render();
     })
     .add('products/men', function() {
       console.log('men');
