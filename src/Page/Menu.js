@@ -20,8 +20,8 @@ export function render() {
   mikMenu.appendChild(menuItems);
 
   mikMenu.addEventListener('click', (e) => {
-    if (!e.target.matches('li')) return; // skip this unless it's an input
-    Router.Router
-      .navigate(e.target.dataset.url);
+    if (!e.target.matches('li')) return;
+
+    Router.Router.navigate(e.target.dataset.url);
   });
 };

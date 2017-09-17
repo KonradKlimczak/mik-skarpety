@@ -1,6 +1,7 @@
 import * as Router from './Router';
 import * as Menu from './Page/Menu';
 import * as Main from './Page/Main';
+import * as ProductGrid from './Page/ProductGrid';
 
 export default () => {
   initRouter();
@@ -19,8 +20,8 @@ function initRouter() {
     .add('new', function() {
       Main.render();
     })
-    .add('products/men', function() {
-      console.log('men');
+    .add('products/*', function() {
+      ProductGrid.render();
     })
     .listen();
 

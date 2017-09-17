@@ -1,5 +1,6 @@
 @import "colors";
 @import "Components/Button";
+@import "Page/Main";
 
 body {
   margin: 0;
@@ -115,8 +116,7 @@ body {
 .mik-content {
   display: flex;
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
 }
 
 .mik-footer {
