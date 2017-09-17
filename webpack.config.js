@@ -2,8 +2,14 @@
 const path = require('path');
 
 module.exports = {
-  devtool: 'cheap-module-source-map',
   entry: './src/index.js',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './public',
+    historyApiFallback: {
+      index: 'index.html'
+    }
+  },
   output: {
     filename: 'bundle.js',
     publicPath: '/assets/',
