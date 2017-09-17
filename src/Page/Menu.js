@@ -25,5 +25,3 @@ export function render() {
       .navigate(e.target.dataset.url);
   });
 };
-
-

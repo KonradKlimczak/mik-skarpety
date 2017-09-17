@@ -2,7 +2,6 @@ import * as Router from './Router';
 import * as Menu from './Page/Menu';
 import * as Main from './Page/Main';
 
-
 export default () => {
   initRouter();
   Menu.render();
